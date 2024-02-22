@@ -20,13 +20,13 @@ function calcularEdad2()
 {
     $fechaNacimiento = new DateTime("2001/09/07");
     $hoy = new DateTime();
-    $diferencia = $hoy->format("y") - $fechaNacimiento->format("y");
-    $edad = $diferencia;
+    $edad = $hoy->format("y") - $fechaNacimiento->format("y");
     if ($hoy->format("%m") < $fechaNacimiento->format("%m")){
         $edad--;
     }
     echo "El usuario tiene " . $edad . " años";
 }
+calcularEdad2();
 
 
 /*
